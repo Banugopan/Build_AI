@@ -1,51 +1,51 @@
-# Développement d’un assistant téléphonique intelligent avec FastAPI, Twilio et OpenAI
+# Developing an Intelligent Phone Assistant with FastAPI, Twilio, and OpenAI
 
-##  Description
-Ce projet démontre la mise en place d’un **assistant téléphonique intelligent** utilisant :
-- **FastAPI** pour l’API backend,
-- **Twilio** pour la gestion des appels téléphoniques,
-- **OpenAI GPT** pour générer des réponses naturelles et contextuelles.
+## Description
+This project demonstrates the implementation of an **intelligent phone assistant** using:
+- **FastAPI** for the backend API,
+- **Twilio** for handling phone calls,
+- **OpenAI GPT** to generate natural and contextual responses.
 
-L’objectif est de permettre à un utilisateur d’appeler un numéro Twilio et d’interagir en direct avec un assistant vocal propulsé par l’IA.
-
----
-
-## Technologies utilisées
-- [FastAPI](https://fastapi.tiangolo.com/) — Framework Python moderne pour créer des APIs.
-- [Uvicorn](https://www.uvicorn.org/) — Serveur ASGI performant.
-- [Twilio](https://www.twilio.com/) — API de communication (voix, SMS).
-- [OpenAI](https://platform.openai.com/) — Modèles GPT pour la génération de texte.
-- [Ngrok](https://ngrok.com/) — Tunnel sécurisé pour exposer le serveur local.
-- [Nest Asyncio](https://pypi.org/project/nest-asyncio/) — Compatibilité avec les environnements Jupyter/Colab.
+The goal is to allow a user to call a Twilio number and interact in real-time with an AI-powered voice assistant.
 
 ---
 
-## Structure des blocs
+## Technologies Used
+- [FastAPI](https://fastapi.tiangolo.com/) — Modern Python framework for building APIs.
+- [Uvicorn](https://www.uvicorn.org/) — High-performance ASGI server.
+- [Twilio](https://www.twilio.com/) — Communication API (voice, SMS).
+- [OpenAI](https://platform.openai.com/) — GPT models for text generation.
+- [Ngrok](https://ngrok.com/) — Secure tunnel to expose the local server.
+- [Nest Asyncio](https://pypi.org/project/nest-asyncio/) — Compatibility with Jupyter/Colab environments.
+
+---
+
+## Block Structure
 - **Block 0 — Installation & Ngrok**  
-  Installe les dépendances et configure le tunnel public.
-- **Block 1 — Variables d’environnement**  
-  Définit les identifiants Twilio et OpenAI.
-- **Block 2 — Application FastAPI**  
-  Gère les endpoints `/call`, `/voice`, `/bot` et la logique de conversation.
-- **Block 3 — Test du bot (simulation Twilio)**  
-  Permet de tester l’IA directement via une requête HTTP.
-- **Block 4 — Test santé du serveur**  
-  Vérifie que l’API est bien active.
-- **Block 5 — Déclenchement d’un appel réel**  
-  Lance un appel téléphonique automatisé via Twilio.
+  Installs dependencies and sets up the public tunnel.
+- **Block 1 — Environment Variables**  
+  Defines Twilio and OpenAI credentials.
+- **Block 2 — FastAPI Application**  
+  Handles the `/call`, `/voice`, `/bot` endpoints and conversation logic.
+- **Block 3 — Bot Testing (Twilio Simulation)**  
+  Enables AI testing directly via HTTP request.
+- **Block 4 — Server Health Check**  
+  Verifies that the API is up and running.
+- **Block 5 — Real Call Trigger**  
+  Initiates an automated phone call via Twilio.
 
 ---
 
-##  Prérequis
-1. Compte [Twilio](https://www.twilio.com/) avec un numéro de téléphone acheté.
-2. Clé API [OpenAI](https://platform.openai.com/).
-3. Installation de Python 3.9+.
-4. Compte [Ngrok](https://ngrok.com/) pour exposer le serveur local.
+## Prerequisites
+1. [Twilio](https://www.twilio.com/) account with a purchased phone number.
+2. [OpenAI](https://platform.openai.com/) API key.
+3. Python 3.9+ installed.
+4. [Ngrok](https://ngrok.com/) account to expose the local server.
 
 ---
 
-## ▶️ Lancement du projet
-1. Clonez le repo :
+## ▶️ Running the Project
+1. Clone the repository:
    ```bash
-   git clone https://github.com/votre-repo/assistant-telephonique.git
-   cd assistant-telephonique
+   git clone https://github.com/your-repo/phone-assistant.git
+   cd phone-assistant
